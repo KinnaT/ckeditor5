@@ -41,7 +41,6 @@ import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specia
 import SpecialCharactersArrows from '@ckeditor/ckeditor5-special-characters/src/specialcharactersarrows.js';
 import SpecialCharactersEssentials from '@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials.js';
 import SpecialCharactersText from '@ckeditor/ckeditor5-special-characters/src/specialcharacterstext.js';
-import StandardEditingMode from '@ckeditor/ckeditor5-restricted-editing/src/standardeditingmode.js';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
 import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript.js';
 import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript.js';
@@ -95,7 +94,6 @@ Editor.builtinPlugins = [
 	SpecialCharactersArrows,
 	SpecialCharactersEssentials,
 	SpecialCharactersText,
-	StandardEditingMode,
 	Strikethrough,
 	Subscript,
 	Superscript,
@@ -107,5 +105,64 @@ Editor.builtinPlugins = [
 	TextTransformation,
 	Underline
 ];
+
+// Editor configuration.
+CustomEditor.defaultConfig = {
+    toolbar: {
+			items: [
+				'undo',
+				'redo',
+				'removeFormat',
+				'|',
+				'heading',
+				'bold',
+				'italic',
+				'underline',
+				'strikethrough',
+				'subscript',
+				'superscript',
+				'specialCharacters',
+				'link',
+				'|',
+				'blockQuote',
+				'code',
+				'bulletedList',
+				'numberedList',
+				'horizontalLine',
+				'pageBreak',
+				'|',
+				'alignment',
+				'outdent',
+				'indent',
+				'|',
+				'imageUpload',
+				'imageInsert',
+				'mediaEmbed',
+				'htmlEmbed',
+				'|',
+				'findAndReplace',
+				'sourceEditing'
+			]
+		},
+		alignment: {
+			options: ['left', 'right', 'center', 'justify']
+		},
+    image: {
+			toolbar: [
+					'imageStyle:inline',
+					'imageStyle:block',
+					'imageStyle:side',
+					'|',
+					'toggleImageCaption',
+					'imageTextAlternative',
+					'linkImage'
+			]
+		},
+		mediaEmbed: {
+			toolbar: ['mediaEmbed'],
+		},
+    // This value must be kept in sync with the language defined in webpack.config.js.
+    language: 'en'
+};
 
 export default Editor;

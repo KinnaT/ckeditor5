@@ -1,6 +1,6 @@
 {
-  "name": "ckeditor5-custom-build-continued-ui",
-  "version": "0.0.3",
+  "name": "@raptorkinna/ckeditor5-custom-build-continued-ui",
+  "version": "0.0.6",
   "description": "Custom CKEditor build",
   "license": "SEE LICENSE IN LICENSE.md",
   "private": false,
@@ -33,7 +33,6 @@
     "@ckeditor/ckeditor5-paragraph": "^29.0.0",
     "@ckeditor/ckeditor5-paste-from-office": "^29.0.0",
     "@ckeditor/ckeditor5-remove-format": "^29.0.0",
-    "@ckeditor/ckeditor5-restricted-editing": "^29.0.0",
     "@ckeditor/ckeditor5-source-editing": "^29.0.0",
     "@ckeditor/ckeditor5-special-characters": "^29.0.0",
     "@ckeditor/ckeditor5-table": "^29.0.0",
