@@ -35,7 +35,7 @@ import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice.js';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
-import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter.js';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/athenaUploadAdapter.js';
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting.js';
 import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters.js';
 import SpecialCharactersArrows from '@ckeditor/ckeditor5-special-characters/src/specialcharactersarrows.js';
@@ -108,61 +108,61 @@ Editor.builtinPlugins = [
 
 // Editor configuration.
 CustomEditor.defaultConfig = {
-    toolbar: {
-			items: [
-				'undo',
-				'redo',
-				'removeFormat',
-				'|',
-				'heading',
-				'bold',
-				'italic',
-				'underline',
-				'strikethrough',
-				'subscript',
-				'superscript',
-				'specialCharacters',
-				'link',
-				'|',
-				'blockQuote',
-				'code',
-				'bulletedList',
-				'numberedList',
-				'horizontalLine',
-				'pageBreak',
-				'|',
-				'alignment',
-				'outdent',
-				'indent',
-				'|',
-				'imageUpload',
-				'imageInsert',
-				'mediaEmbed',
-				'htmlEmbed',
-				'|',
-				'findAndReplace',
-				'sourceEditing'
-			]
-		},
-		alignment: {
-			options: ['left', 'right', 'center', 'justify']
-		},
-    image: {
-			toolbar: [
-					'imageStyle:inline',
-					'imageStyle:block',
-					'imageStyle:side',
-					'|',
-					'toggleImageCaption',
-					'imageTextAlternative',
-					'linkImage'
-			]
-		},
-		mediaEmbed: {
-			toolbar: ['mediaEmbed'],
-		},
-    // This value must be kept in sync with the language defined in webpack.config.js.
-    language: 'en'
+	toolbar: {
+		items: [
+			'undo',
+			'redo',
+			'removeFormat',
+			'|',
+			'heading',
+			'bold',
+			'italic',
+			'underline',
+			'strikethrough',
+			'subscript',
+			'superscript',
+			'specialCharacters',
+			'link',
+			'|',
+			'blockQuote',
+			'code',
+			'bulletedList',
+			'numberedList',
+			'horizontalLine',
+			'pageBreak',
+			'|',
+			'alignment',
+			'outdent',
+			'indent',
+			'|',
+			'imageUpload',
+			'imageInsert',
+			'mediaEmbed',
+			'htmlEmbed',
+			'|',
+			'findAndReplace',
+			'sourceEditing'
+		]
+	},
+	alignment: {
+		options: ['left', 'right', 'center', 'justify']
+	},
+	image: {
+		toolbar: [
+			'imageStyle:inline',
+			'imageStyle:block',
+			'imageStyle:side',
+			'|',
+			'toggleImageCaption',
+			'imageTextAlternative',
+			'linkImage'
+		]
+	},
+	mediaEmbed: {
+		toolbar: ['mediaEmbed'],
+	},
+	// This value must be kept in sync with the language defined in webpack.config.js.
+	language: 'en'
 };
 
 export default Editor;
