@@ -148,7 +148,7 @@ class Adapter {
   _initRequest() {
     const xhr = this.xhr = new XMLHttpRequest();
 
-    xhr.open('POST', this.options.uploadUrl, true);
+    xhr.open('PUT', this.options.uploadUrl, true);
     xhr.responseType = 'json';
   }
 
