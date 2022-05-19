@@ -35,7 +35,7 @@ import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice.js';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
-import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter.js';
+// import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter.js';
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting.js';
 import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters.js';
 import SpecialCharactersArrows from '@ckeditor/ckeditor5-special-characters/src/specialcharactersarrows.js';
@@ -51,6 +51,7 @@ import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import AthenaUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/athenauploadadapter.js';
 
 class Editor extends ClassicEditor { }
 
@@ -88,7 +89,7 @@ Editor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	RemoveFormat,
-	SimpleUploadAdapter,
+	// SimpleUploadAdapter,
 	SourceEditing,
 	SpecialCharacters,
 	SpecialCharactersArrows,
@@ -103,7 +104,8 @@ Editor.builtinPlugins = [
 	TableProperties,
 	TableToolbar,
 	TextTransformation,
-	Underline
+	Underline,
+	AthenaUploadAdapter,
 ];
 
 // Editor configuration.
