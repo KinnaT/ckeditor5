@@ -104,7 +104,6 @@ Editor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	Underline,
-	AthenaUploadAdapter,
 ];
 
 // Editor configuration.
