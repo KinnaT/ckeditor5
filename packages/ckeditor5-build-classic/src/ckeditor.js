@@ -107,7 +107,7 @@ Editor.builtinPlugins = [
 ];
 
 // Editor configuration.
-CustomEditor.defaultConfig = {
+Editor.defaultConfig = {
 	toolbar: {
 		items: [
 			'undo',
